@@ -36,28 +36,6 @@ namespace
     name = name.substr(0, pos);
     return name;
   }
-  
-  bool test()
-  {
-    try
-    {
-      list<string> contactPoints = {"localhost"};
-      auto cluster = make_shared<Cassandra::ClusterImpl>(contactPoints);
-      cluster->connect("system");
-      //cluster.reset();
-     return false;
-    }
-    catch (Cassandra::DriverException& e)
-    {
-      std::cerr << "future error" << std::endl;
-      return false;
-    }
-    catch (std::runtime_error& e)
-    {
-      std::cerr << "error" << std::endl;
-      return false;
-    }
-  }
 }
 
 class TestWrapper: public CxxTest::TestSuite
