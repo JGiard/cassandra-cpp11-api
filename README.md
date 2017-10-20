@@ -1,3 +1,5 @@
+warning : I haven't work on this since an long time, and have since moved to other projects, feel free to use any of it though
+
 # cassandra-cpp11-api
 
 I've put together a rudimentary cmake build system and extracted the current state of my c++11 api for https://github.com/datastax/cpp-driver.
